@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+// import Image from 'boostrap';
 import Toolbar from './components/Toolbar/Toolbar';
 import SideDrawer from './components/SideDrawer/SideDrawer';
 import Backdrop from './components/Backdrop/Backdrop';
@@ -30,8 +30,8 @@ class App extends Component {
         <Toolbar drawerClickHandler={this.drawerToggleClickHandler} />
         <SideDrawer show={this.state.sideDrawerOpen} />
         {backdrop}
-        <main style={{ marginTop: '64px' }}>
-          <p>This is the page content!</p>
+        <main style={{ marginTop: '64px', zIndex: 500, position: "absolute" }}>
+          <p>Where Nature Ends!</p>
         </main>
 
       </div>
